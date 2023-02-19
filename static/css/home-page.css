@@ -1,0 +1,144 @@
+.container{
+    height: max-content;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+}
+
+
+
+main{
+    position:unset;
+    height: 550em;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.grid-row-title{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 0 10px 30px;
+}
+
+.main-grid h2 {
+    color: #47525E;
+    font-family: Bree Serif;
+    font-size: 26px;
+    line-height: 33px;
+    text-align: left;
+}
+.grid-row-box{
+    display: flex;
+    height: max-content;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: 0.5px solid #47525E;
+
+
+}
+.grid-row-box p{
+    color: #8190A5;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 30px;
+    width: 549px;
+    text-align: justify;
+}
+
+.grid-row-curse h3{
+    padding: 3rem 0 1rem 1rem;
+}
+.videos{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    padding: 15px 30px;
+    gap: 1rem;
+}
+
+
+/* .videos div:first-of-type{
+    flex:5;
+} */
+
+.videos .box-videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    position: relative;
+    flex: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: height 1s, flex 0.5s cubic-bezier(.25, .4, .45, 1.4);
+    
+}
+
+
+.videos .box-videos iframe{
+    position: unset;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    display: flex;  
+}
+
+.videos .box-videos h4{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    color: #9e9e9e;
+    font-family: Lato;
+    font-size: 16px;
+    /* line-height: 30px; */
+}
+
+
+
+.box-curse-descritions{
+    background-color: rgb(211, 210, 210);
+    position: absolute;
+    padding: 12px;
+    top: 230px;
+    width: 400px;
+    height: 150px;
+    display: none;
+    overflow: hidden;
+    height: max-content;
+    border-radius: 15px;
+}
+
+
+.curse-descritions{
+    position: relative;
+    color:#4c4848;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: justify;
+    font-family: sans-serif;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+.videos .box-videos:hover {
+    flex: 5;
+    height: 400px;
+}
+
+.videos .box-videos:hover > .box-curse-descritions{
+    display: flex;
+}
+
