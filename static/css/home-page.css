@@ -11,6 +11,7 @@ main{
     position:unset;
     height: 550em;
     background-color: rgb(255, 255, 255);
+    width: 100%;
 }
 
 
@@ -23,12 +24,18 @@ main{
     padding: 0 0 10px 30px;
 }
 
+.main-grid{
+    width: 100%;
+    position: relative;
+} 
+
 .main-grid h2 {
     color: #47525E;
     font-family: Bree Serif;
     font-size: 26px;
     line-height: 33px;
     text-align: left;
+    
 }
 .grid-row-box{
     display: flex;
@@ -43,6 +50,7 @@ main{
 
 
 }
+
 .grid-row-box p{
     color: #8190A5;
     font-family: Lato;
@@ -53,9 +61,17 @@ main{
 }
 
 .grid-row-curse h3{
+.grid-row-curse{
+    position: relative;
+    width: 100%;
+}
+
+.grid-row-curse h3{  
     padding: 3rem 0 1rem 1rem;
 }
+
 .videos{
+    position: relative;
     width: 100%;
     height: max-content;
     display: flex;
@@ -79,6 +95,7 @@ main{
     background-repeat: no-repeat;
     background-size: auto 100%;
     transition: height 1s, flex 0.5s cubic-bezier(.25, .4, .45, 1.4);
+    overflow: hidden;
     
 }
 
@@ -98,8 +115,13 @@ main{
     text-align: center;
     margin-top: 0.5rem;
     color: #9e9e9e;
+    color: #746767;
     font-family: Lato;
     font-size: 16px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     /* line-height: 30px; */
 }
 
@@ -110,6 +132,7 @@ main{
     position: absolute;
     padding: 12px;
     top: 230px;
+    top: 250px;
     width: 400px;
     height: 150px;
     display: none;
